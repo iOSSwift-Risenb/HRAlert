@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        perform(#selector(alert), on: .main, with: nil, waitUntilDone: false)
+//        perform(#selector(alert), on: .main, with: nil, waitUntilDone: false)
     
     }
     
@@ -31,16 +31,19 @@ class ViewController: UIViewController {
     
     @objc private func alert() {
         
-        HRAlert.alert("This is alert message!")
+//        HRAlert.message("success")
         
-//        HRAlert.alert("xxx") {
-//            print("complete")
+//        HRAlert.action("success", "OK") {
+//            print("next")
 //        }
         
-//        HRAlert.alert(title: "This is alert message!", message: "", duration: 1, then: nil);
         
+        HRAlert.choose("Y/N", leftTitle: "Y", leftHandler: {
+            print("yes")
+        }, rightTitle: "N") {
+            print("no")
+        }
         
     }
-
 }
 
