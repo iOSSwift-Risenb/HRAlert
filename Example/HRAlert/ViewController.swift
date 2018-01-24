@@ -7,17 +7,39 @@
 //
 
 import UIKit
+import HRAlert
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        perform(#selector(alert), on: .main, with: nil, waitUntilDone: false)
+    
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        perform(#selector(alert), on: .main, with: nil, waitUntilDone: false)
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @objc private func alert() {
+        
+        HRAlert.alert("This is alert message!")
+        
+//        HRAlert.alert("xxx") {
+//            print("complete")
+//        }
+        
+//        HRAlert.alert(title: "This is alert message!", message: "", duration: 1, then: nil);
+        
+        
     }
 
 }

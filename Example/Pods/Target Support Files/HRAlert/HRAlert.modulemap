@@ -1,0 +1,6 @@
+framework module HRAlert {
+  umbrella header "HRAlert-umbrella.h"
+
+  export *
+  module * { export * }
+}
