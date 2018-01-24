@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HRAlert_Example' do
+  pod 'HRAlert', :path => '../'
+
+  target 'HRAlert_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
