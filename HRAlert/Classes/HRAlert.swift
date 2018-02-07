@@ -73,7 +73,15 @@ public extension UIViewController {
         case .message:
             let duration = objs[2] as! Float
             let then = objs[3] as? VoidClosure
-            root.present(alert, animated: true, completion: {
+            
+            var top = root!.presentedViewController
+            var bottom = root
+            while top != nil {
+                top = top!.presentedViewController
+                bottom = bottom?.presentedViewController
+            }
+            
+            bottom!.present(alert, animated: true, completion: {
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + DispatchTimeInterval.milliseconds(Int(duration * 1000))) {
                     if root.presentedViewController != nil {
                         root.presentedViewController?.dismiss(animated: true, completion: then)
@@ -82,7 +90,15 @@ public extension UIViewController {
             })
             
         case .action:
-            root.present(alert, animated: true, completion:nil)
+            
+            var top = root!.presentedViewController
+            var bottom = root
+            while top != nil {
+                top = top!.presentedViewController
+                bottom = bottom?.presentedViewController
+            }
+            
+            bottom!.present(alert, animated: true, completion:nil)
         }
     }
 }
