@@ -13,14 +13,28 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
 
-//        perform(#selector(alert), on: .main, with: nil, waitUntilDone: false)
+//        HRAlert.message("msgnone")
+//
+//        HRAlert.message("msgthen") {
+//            print("then")
+//        }
+        
+//        HRAlert.action("action", "ok") {
+//            print("ok")
+//        };
+        
+        HRAlert.choose("choose", leftTitle: "l", leftHandler: {
+            print("l")
+        }, rightTitle: "r") {
+            print("r")
+        }
     
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        perform(#selector(alert), on: .main, with: nil, waitUntilDone: false)
+//        perform(#selector(alert), on: .main, with: nil, waitUntilDone: false)
 
     }
 

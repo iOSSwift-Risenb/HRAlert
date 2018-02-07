@@ -40,11 +40,11 @@
 		607FACE51AFB9204008FA782 /* HRAlert_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HRAlert_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		63803EFF5D7D889F587AE229 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		63803EFF5D7D889F587AE229 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		693E25372C0CC3968F0A613D /* Pods-HRAlert_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRAlert_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HRAlert_Example/Pods-HRAlert_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6DB18EAD035C6CB8E5728A06 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6DB18EAD035C6CB8E5728A06 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		752E6EC51C0548A5B60FE1DC /* Pods_HRAlert_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HRAlert_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		82B98C75F1DE18540785516B /* HRAlert.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HRAlert.podspec; path = ../HRAlert.podspec; sourceTree = "<group>"; };
+		82B98C75F1DE18540785516B /* HRAlert.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HRAlert.podspec; path = ../HRAlert.podspec; sourceTree = "<group>"; };
 		F41AF54761F03A2D44F9EDAF /* Pods_HRAlert_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HRAlert_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4233683021EE0412310F015 /* Pods-HRAlert_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRAlert_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HRAlert_Example/Pods-HRAlert_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
